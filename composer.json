@@ -1,0 +1,18 @@
+{
+    "name": "vendor/gcg-connection",
+    "description": "Provide connector classes for connections",
+    "authors": [
+        {
+            "name": "James Jones",
+            "email": "jamjon3@pinellasgreens.org"
+        }
+    ],
+    "require": {
+        "ext-mongo": "*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "GCG\\Core\\" : "src/"
+        }
+    }
+}
