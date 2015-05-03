@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "ext-mongo": "*"
+        "ext-mongo": "*",
+        "caseyamcl/configula": "v2.3.1"
     },
     "autoload": {
         "psr-4" : {
