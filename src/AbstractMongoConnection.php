@@ -40,7 +40,7 @@ abstract class AbstractMongoConnection {
      */
     public function createMongoConnection() {
         //Access configuration values from default location (/usr/local/etc/gpg/default)
-        $config = new Configula\Config('/usr/local/etc/gpg/default');
+        $config = new \Configula\Config('/usr/local/etc/gpg/default');
         // The connection configuration        
         $mongoConfig = $config->mongoConfig;
         
