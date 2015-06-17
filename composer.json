@@ -8,10 +8,11 @@
         }
     ],
     "require": {
-        "ext-mongo": "*",
+        "catfan/medoo": "0.9.8",
         "caseyamcl/configula": "v2.3.1",
         "ext-mysql": "*",
-        "catfan/medoo": "0.9.8"
+        "ext-pgsql": "*",
+        "ext-mongo": "*"
     },
     "autoload": {
         "psr-4" : {

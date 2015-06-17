@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "321710c2c98e3d737711b3538913bab2",
+    "hash": "5dddb32988e9ece81eb137d4a4dd4fa4",
     "packages": [
         {
             "name": "caseyamcl/configula",
@@ -165,8 +165,9 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "ext-mongo": "*",
-        "ext-mysql": "*"
+        "ext-mysql": "*",
+        "ext-pgsql": "*",
+        "ext-mongo": "*"
     },
     "platform-dev": []
 }
