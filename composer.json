@@ -10,7 +10,8 @@
     "require": {
         "ext-mongo": "*",
         "caseyamcl/configula": "v2.3.1",
-        "ext-mysql": "*"
+        "ext-mysql": "*",
+        "catfan/medoo": "0.9.8"
     },
     "autoload": {
         "psr-4" : {
