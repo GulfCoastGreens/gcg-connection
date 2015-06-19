@@ -13,27 +13,27 @@ namespace GCG\Core;
  *
  * @author charlie
  */
-abstract class AbstractPostgresConnection {
+abstract class AbstractDBConnection {
     // Meedo database connection
     protected $conx = [];
-    
+            
     /**
      * Gets an existing or creates a new stored connection to return
      * 
      * @param type $source
-     * @return Postgres
+     * @return Meedo connection
      */
-    public function getPostgresConnection($source) {
+    public function getConnection($source) {
         if(($this->conx === null)?true:!array_key_exists($source, $this->conx)) {
-            $this->conx[$source] = $this->createPostgresConnection($source);
+            $this->conx[$source] = $this->createMysqlConnection($source);
         }
         return $this->conx[$source];
     }
     
-    public function createPostgresConnection($source) {
+    public function createConnection($source) {
         //Access configuration values from default location (/usr/local/etc/gpg/default)
         $config = new \Configula\Config('/usr/local/etc/gpg/default');
         
-        return new \medoo($config->postgresConfig[$source]); // medoo does not use namespaces
+        return new \medoo($config->databaseConfig[$source]); // medoo does not use namespaces
     }
 }

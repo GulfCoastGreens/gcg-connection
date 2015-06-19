@@ -15,7 +15,7 @@ use MongoClient;
  *
  * @author jam
  */
-abstract class AbstractMongoConnection {
+abstract class AbstractMongoConnection extends AbstractDBConnection {
     /**
      * The connection that will be used.
      *
